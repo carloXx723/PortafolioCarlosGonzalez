@@ -65,13 +65,6 @@ const Inicio = () => {
                             <FaInstagram size={22} className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors" />
                         </a>
 
-                        <a
-                            href="mailto:gonzalezsosacarlosalberto@gmail.com"
-                            className="group w-14 h-14 flex items-center justify-center rounded-lg  bg-transparent transition-all duration-300 hover:bg-[#FF014F] hover:border-[#FF014F] hover:-translate-y-1"
-                        >
-                            <FaEnvelope size={22} className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors" />
-                        </a>
-
                     </div>
                 </div>
 
