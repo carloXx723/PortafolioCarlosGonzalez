@@ -1,7 +1,7 @@
 import Inicio from "./components/inicio";import Image from "next/image";
 import Formacion from "./components/formacion";
 import Habilidades from "./components/habilidades";
-//import Proyectos from "./components/proyectos";
+import Proyectos from "./components/proyectos";
 //import Contacto from "./components/contacto";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <Inicio/>
     <Formacion/>
     <Habilidades/>
-    {/* <Proyectos/> */}
+    <Proyectos/> 
     {/* <Contacto/> */}
     </div>
 
