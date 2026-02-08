@@ -28,13 +28,17 @@ export function NavBar() {
 	return (
 		<header className="fixed inset-x-0 top-0 z-50 bg-[#131313]/95 backdrop-blur ">
 			<nav className="flex w-full items-center justify-between px-8 py-6 sm:px-12 lg:px-16 md:py-8">
-				<p className={`${pacifico.className} text-2xl font-semibold tracking-wide`}>
+				<Link
+					href="#inicio"
+					className={`${pacifico.className} text-2xl font-semibold tracking-wide cursor-pointer hover:opacity-80 transition-opacity`}
+					onClick={() => setIsOpen(false)} 
+				>
 					<span className="text-[#FF014F]">C</span>
 					<span className="text-[oklch(70.7%_0.022_261.325)]">arlos</span>
 					{" "}
 					<span className="text-[#FF014F]">G</span>
 					<span className="text-[oklch(70.7%_0.022_261.325)]">onzalez</span>
-				</p>
+				</Link>
 
 				<button
 					type="button"
