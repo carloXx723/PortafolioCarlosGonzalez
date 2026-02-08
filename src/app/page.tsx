@@ -2,7 +2,7 @@ import Inicio from "./components/inicio";import Image from "next/image";
 import Formacion from "./components/formacion";
 import Habilidades from "./components/habilidades";
 import Proyectos from "./components/proyectos";
-//import Contacto from "./components/contacto";
+import Contacto from "./components/contacto";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
     <Formacion/>
     <Habilidades/>
     <Proyectos/> 
-    {/* <Contacto/> */}
+    <Contacto/> 
     </div>
 
 

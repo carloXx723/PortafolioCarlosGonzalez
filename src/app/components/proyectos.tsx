@@ -38,7 +38,7 @@ const projects = [
     },
     {
         id: 2,
-        category: "Landing Page Corporativa",
+        category: "Landing Page ",
         title: "Landing Page - Tenis Sport LZC",
         description: "Página web promocional diseñada para atraer clientes. Muestra productos destacados, ubicación y contacto con un diseño moderno y atractivo.", 
         image: "/proyecto2.png",
