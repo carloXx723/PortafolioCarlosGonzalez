@@ -88,7 +88,7 @@ const ResumeCard = ({ item }: { item: any }) => {
 
 const Formacion = () => {
     return (
-        <section id="formacion" className="w-full bg-[#111] py-20 px-4 sm:px-10 scroll-mt-20">
+        <section id="formacion" className="w-full bg-[#131313] py-20 px-4 sm:px-10 scroll-mt-20">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center">
                     <span className="text-[#FF014F] tracking-widest text-sm font-medium uppercase">
