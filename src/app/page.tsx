@@ -1,4 +1,4 @@
-"use client"; // Asegúrate de que page.tsx sea Client Component para usar el hook
+"use client"; 
 
 import { useActiveSection } from "./hooks/useActiveSection";
 import Inicio from "./components/inicio";
