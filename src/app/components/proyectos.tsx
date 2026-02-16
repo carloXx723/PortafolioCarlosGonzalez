@@ -68,7 +68,7 @@ const projects = [
             <SiTailwindcss key="tail" size={24} className="text-[#06B6D4]" title="Tailwind CSS" />
         ]
     },
-    {
+    /*{
         id: 4,
         category: "Automatización",
         title: "Automatización de Reportes en Excel",
@@ -83,7 +83,7 @@ const projects = [
             <SiMysql key="postgre" size={24} className="text-[#4169E1]" title="MySQL" />,
             <SiTailwindcss key="tail" size={24} className="text-[#06B6D4]" title="Tailwind CSS" />
         ]
-    },
+    },*/
 ];
 
 const Proyectos = () => {
