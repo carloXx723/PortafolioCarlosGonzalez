@@ -77,10 +77,10 @@ const Inicio = () => {
 
                         <div className="relative w-full h-full rounded-full overflow-hidden z-20 p-2">
                             <Image
-                                src="/foto-carlos.png"
+                                src="/fotoPersonal.jpeg"
                                 alt="Carlos González"
                                 fill
-                                className="object-cover object-top rounded-full"
+                                className="object-cover object-center rounded-full"
                                 priority
                             />
                         </div>
