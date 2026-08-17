@@ -32,6 +32,7 @@ const certificationData = [
     {
         id: 2,
         title: "CCNA: Enterprise Networking, Security, and Automation",
+        pending: true,
         subTitle: "Cisco Networking Academy / ITM",
         date: "Ene 2026 - Jul 2026",
         description: "Módulo avanzado de redes empresariales. Enfoque en arquitecturas escalables, configuración de VPNs y ACLs, seguridad de red y automatización de infraestructura.",
@@ -39,6 +40,7 @@ const certificationData = [
     {
         id: 3,
         title: "CCNA: Switching, Routing, and Wireless Essentials",
+        pending: true,
         subTitle: "Cisco Networking Academy / ITM",
         date: "Ago 2025 - Ene 2026",
         description: "Especialización en conmutación y enrutamiento. Configuración de VLANs, redundancia de LAN, seguridad de puertos y conceptos de redes inalámbricas (WLAN).",
@@ -46,6 +48,7 @@ const certificationData = [
     {
         id: 4,
         title: "CCNA: Introduction to Networks",
+        pending: true,
         subTitle: "Cisco Networking Academy / ITM",
         date: "Ago 2024 - Feb 2025",
         description: "Fundamentos sólidos de arquitectura de redes, modelos OSI y TCP/IP, direccionamiento IPv4/IPv6 y configuración básica de dispositivos de red (Routers y Switches).",
@@ -93,6 +96,11 @@ const ResumeCard = ({ item }: { item: any }) => {
                             Ver certificado
                         </a>
                     )}
+                    {item.pending && (
+                        <span className="text-gray-400/80 italic text-sm font-medium w-fit ml-4 mt-2">
+                            Certificación en trámite
+                        </span>
+                    )}
                 </div>
             </div>
         </div>
@@ -124,7 +132,7 @@ const Formacion = () => {
                     </div>
                     <div>
                         <h4 className="mb-8 text-sm font-medium tracking-widest text-[#FF014F] uppercase">
-                            Certificaciones
+                            Certificaciones y Cursos
                         </h4>
                         <div className="flex flex-col">
                             {certificationData.map((item) => (
