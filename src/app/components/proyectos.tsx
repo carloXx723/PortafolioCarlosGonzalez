@@ -42,8 +42,8 @@ const projects = [
         category: "Landing Page ",
         title: "Landing Page - Tenis Sport LZC",
         description: "Página web promocional diseñada para atraer clientes. Muestra productos destacados, ubicación y contacto con un diseño moderno y atractivo.",
-        image: "/proyecto2.png",
-        link: "https://github.com/carloxx723",
+        image: "/proyecto2-lzc.png",
+        link: "https://tennissportlzc.com/inicio",
         techs: [
             <SiHtml5 key="html" size={24} className="text-[#E34F26]" title="HTML5" />,
             <SiCss3 key="css" size={24} className="text-[#1572B6]" title="CSS3" />,
@@ -52,38 +52,7 @@ const projects = [
             <SiVercel key="vercel" size={24} className="text-white" title="Vercel" />
         ]
     },
-    {
-        id: 3,
-        category: "Aplicación Web",
-        title: "Gestión de Empleados",
-        description: "Sistema para el control administrativo de personal. Permite gestionar expedientes, asistencias y departamentos a través de un panel de control intuitivo.",
-        image: "/proyecto3.png",
-        link: "https://github.com/carloxx723",
-        techs: [
-            <SiHtml5 key="html" size={24} className="text-[#E34F26]" title="HTML5" />,
-            <SiCss3 key="css" size={24} className="text-[#1572B6]" title="CSS3" />,
-            <SiNextdotjs key="next" size={24} className="text-white" title="Next.js" />,
-            <SiNestjs key="nest" size={24} className="text-[#E0234E]" title="NestJS" />,
-            <SiPostgresql key="postgre" size={24} className="text-[#4169E1]" title="PostgreSQL" />,
-            <SiTailwindcss key="tail" size={24} className="text-[#06B6D4]" title="Tailwind CSS" />
-        ]
-    },
-    /*{
-        id: 4,
-        category: "Automatización",
-        title: "Automatización de Reportes en Excel",
-        description: "Herramienta que automatiza la creación de reportes financieros. Permite procesar datos masivos y exportarlos directamente a archivos Excel con tablas y gráficos.",
-        image: "/proyecto4.png",
-        link: "https://github.com/carloxx723",
-        techs: [
-            <SiHtml5 key="html" size={24} className="text-[#E34F26]" title="HTML5" />,
-            <SiCss3 key="css" size={24} className="text-[#1572B6]" title="CSS3" />,
-            <SiTypescript key="ts" size={24} className="text-[#3178C6]" title="TypeScript" />,
-            <SiNestjs key="nest" size={24} className="text-[#E0234E]" title="NestJS" />,
-            <SiMysql key="postgre" size={24} className="text-[#4169E1]" title="MySQL" />,
-            <SiTailwindcss key="tail" size={24} className="text-[#06B6D4]" title="Tailwind CSS" />
-        ]
-    },*/
+
 ];
 
 const Proyectos = () => {
@@ -145,22 +114,24 @@ const Proyectos = () => {
                                     ))}
                                 </div>
 
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group flex items-center gap-3 text-white font-medium transition-all"
-                                >
-                                    <div className="w-14 h-14 rounded-full border border-gray-600 flex items-center justify-center group-hover:bg-[#FF014F] group-hover:border-[#FF014F] transition-all duration-300">
-                                        <BsArrowUpRight
-                                            size={22}
-                                            className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors duration-300 rotate-45 group-hover:rotate-0"
-                                        />
-                                    </div>
-                                    <span className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors uppercase text-sm tracking-wider">
-                                        Ver en GitHub
-                                    </span>
-                                </a>
+                                {project.id !== 1 && (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group flex items-center gap-3 text-white font-medium transition-all"
+                                    >
+                                        <div className="w-14 h-14 rounded-full border border-gray-600 flex items-center justify-center group-hover:bg-[#FF014F] group-hover:border-[#FF014F] transition-all duration-300">
+                                            <BsArrowUpRight
+                                                size={22}
+                                                className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors duration-300 rotate-45 group-hover:rotate-0"
+                                            />
+                                        </div>
+                                        <span className="text-[oklch(70.7%_0.022_261.325)] group-hover:text-white transition-colors uppercase text-sm tracking-wider">
+                                            {project.id === 2 ? "Ver Proyecto" : "Ver en GitHub"}
+                                        </span>
+                                    </a>
+                                )}
                             </div>
 
                         </div>

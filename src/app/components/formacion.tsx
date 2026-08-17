@@ -25,8 +25,9 @@ const certificationData = [
         id: 1,
         title: "Google Project Management Professional Certificate",
         subTitle: "Coursera / Google",
-        date: "2026 (En curso)",
+        date: "2026",
         description: "Programa profesional enfocado en la gestión de proyectos eficiente, metodologías Ágiles, gestión de riesgos, y liderazgo estratégico para la toma de decisiones en entornos tecnológicos.",
+        link: "https://drive.google.com/file/d/1-U7J_CkIohb9t52wmzEnZNoogRDgsLTG/view?usp=drive_link"
     },
     {
         id: 2,
@@ -78,9 +79,21 @@ const ResumeCard = ({ item }: { item: any }) => {
             <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-96 opacity-100 mt-6" : "max-h-0 opacity-0"}`}
             >
-                <p className="text-gray-400 leading-relaxed text-base border-l-2 border-[#FF014F]/30 pl-4">
-                    {item.description}
-                </p>
+                <div className="flex flex-col gap-3">
+                    <p className="text-gray-400 leading-relaxed text-base border-l-2 border-[#FF014F]/30 pl-4">
+                        {item.description}
+                    </p>
+                    {item.link && (
+                        <a 
+                            href={item.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[#FF014F] hover:text-white transition-colors text-sm font-medium w-fit ml-4 mt-2 hover:underline"
+                        >
+                            Ver certificado
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );

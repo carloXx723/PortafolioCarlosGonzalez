@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { FaJava, FaDocker, FaGithub } from "react-icons/fa";
+import { FaJava, FaDocker, FaGithub, FaNetworkWired } from "react-icons/fa";
 import { DiMsqlServer } from "react-icons/di";
 import {
     SiJavascript,
@@ -19,7 +19,8 @@ import {
     SiVercel,
     SiJira,
     SiSupabase,
-    SiPostman
+    SiPostman,
+    SiCisco
 } from "react-icons/si";
 
 const skills = [
@@ -43,6 +44,8 @@ const skills = [
     { name: "Figma", icon: <SiFigma size={40} className="text-[#F24E1E]" /> },
     { name: "Vercel", icon: <SiVercel size={40} className="text-white" /> },
     { name: "Jira", icon: <SiJira size={40} className="text-[#0052CC]" /> },
+    { name: "Cisco", icon: <SiCisco size={40} className="text-[#1BA0D7]" /> },
+    { name: "Packet Tracer", icon: <FaNetworkWired size={40} className="text-[#F39C12]" /> },
 ];
 
 const Habilidades = () => {
