@@ -16,7 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Carlos González | Portafolio", 
   description: "Portafolio de Ingeniero de software Full Stack", 
-  
+  verification: {
+    google: "R6mkYhVDDY0QgtvB-DyJKxeBv-_hpizrfucH82HMyyI",
+  },
 };
 
 export default function RootLayout({
